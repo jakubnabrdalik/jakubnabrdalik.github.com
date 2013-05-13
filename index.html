@@ -30,6 +30,11 @@
         <div ng-switch="subview" class="subview">
           <div ng-switch-when="loading" ui-animate>
             <p>loading...</p>
+            <div class="centered">
+              <div class="container">
+                <div class="img-loading"><img src="img/ajax-loader.gif"></div>
+              </div>
+            </div>
           </div>
           <div ng-switch-when="page1" ng-include=" 'partials/partial1.html' " ui-animate></div>
           <div ng-switch-when="page2" ng-include=" 'partials/partial2.html' " ui-animate></div>
